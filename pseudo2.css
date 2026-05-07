@@ -1,0 +1,20 @@
+#tabela-ex2 {
+  border-collapse: collapse; /* Remove espaço duplo entre bordas */
+  width: 100%;
+}
+ 
+#tabela-ex2 th,
+#tabela-ex2 td {
+  border: 1px solid #999;
+  padding: 8px 12px;
+  text-align: left;
+}
+ 
+#tabela-ex2 th {
+  color: darkblue;
+}
+ 
+/* tr:nth-child(even) → seleciona as linhas PARES da tabela */
+#tabela-ex2 tr:nth-child(even) {
+  background-color: #e6e6e6;
+}

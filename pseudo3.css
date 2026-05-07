@@ -1,0 +1,20 @@
+#tabela-ex3 {
+  border-collapse: collapse;
+  width: 100%;
+}
+ 
+#tabela-ex3 th,
+#tabela-ex3 td {
+  border: 1px solid #999;
+  padding: 8px 12px;
+  text-align: left;
+}
+ 
+#tabela-ex3 th {
+  color: darkblue;
+}
+ 
+/* td:nth-child(odd) → seleciona as células nas colunas ÍMPARES (1ª e 3ª) */
+#tabela-ex3 td:nth-child(odd) {
+  background-color: lightgreen;
+}
