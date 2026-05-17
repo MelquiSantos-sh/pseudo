@@ -1,0 +1,16 @@
+#lista-nomes {
+  list-style: none; /* Remove o marcador padrão */
+  padding: 0;
+}
+ 
+#lista-nomes li {
+  margin: 6px 0;
+}
+ 
+/* li::before → adiciona o ícone ✔ antes de cada item da lista */
+#lista-nomes li::before {
+  content: "✔"; /* Texto/ícone inserido antes do elemento */
+  color: green;
+  margin-right: 6px;
+}
+ 

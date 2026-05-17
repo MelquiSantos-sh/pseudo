@@ -1,0 +1,19 @@
+#paragrafos p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+ 
+/* p:first-child::first-line → primeira linha do PRIMEIRO parágrafo */
+#paragrafos p:first-child::first-line {
+  background-color: yellow;
+}
+ 
+/* p:not(:first-child)::first-line → primeira linha dos DEMAIS parágrafos */
+#paragrafos p:not(:first-child)::first-line {
+  background-color: lightsalmon;
+}
+ 

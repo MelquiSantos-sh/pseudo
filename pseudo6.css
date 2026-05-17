@@ -1,0 +1,32 @@
+#topicos {
+  list-style: none;
+  padding: 0;
+}
+ 
+/* Títulos de seção da lista */
+#topicos .titulo-topico {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 16px;
+}
+ 
+/* .titulo-topico::before → adiciona o ícone 👉 antes do título */
+#topicos .titulo-topico::before {
+  content: "👉 ";
+}
+ 
+/* Sub-lista com os itens de cada tópico */
+.sub-lista {
+  list-style: none;
+  padding-left: 30px; /* Recuo para indicar hierarquia */
+}
+ 
+.sub-lista li {
+  font-weight: bold;
+  margin: 4px 0;
+}
+ 
+/* .sub-lista li::before → adiciona o ícone 🟢 antes de cada item */
+.sub-lista li::before {
+  content: "🟢 ";
+}
