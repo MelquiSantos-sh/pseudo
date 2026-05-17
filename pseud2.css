@@ -1,24 +1,51 @@
- #ex2 table,
- #ex3 table {
-     border-collapse: collapse;
-     width: 100%;
- }
+/* Define a fonte padrão de toda a página como Arial
+   e adiciona um espaço de 30px nas bordas da tela */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
 
- #ex2 th,
- #ex2 td,
- #ex3 th,
- #ex3 td {
-     border: 1px solid #999;
-     padding: 6px 10px;
-     text-align: left;
- }
+/* Define o tamanho do título e um espaço abaixo dele */
+h1 {
+    font-size: 1.1rem;
+    /* Tamanho da fonte (1.1x o tamanho padrão) */
+    margin-bottom: 15px;
+    /* Espaço entre o título e o conteúdo abaixo */
+}
 
- #ex2 th,
- #ex3 th {
-     background: #dde;
-     color: darkblue;
- }
+/* Configurações gerais da tabela */
+table {
+    border-collapse: collapse;
+    /* Junta as bordas das células em uma só linha,
+                                evitando bordas duplas entre as células */
+    width: 400px;
+    /* Largura fixa da tabela */
+}
 
- #ex2 tr:nth-child(even) td {
-     background-color: #e6e6e6;
- }
+/* Estilos aplicados tanto nas células de cabeçalho (th)
+   quanto nas células de dados (td) */
+th,
+td {
+    border: 1px solid #999;
+    /* Borda cinza de 1px ao redor de cada célula */
+    padding: 6px 12px;
+    /* Espaço interno: 6px em cima/baixo, 12px nas laterais */
+    text-align: left;
+    /* Alinha o texto à esquerda dentro da célula */
+}
+
+/* Estilos exclusivos do cabeçalho da tabela */
+th {
+    color: darkblue;
+    /* Texto em azul escuro */
+    background: #dde;
+    /* Fundo azul bem claro */
+}
+
+/* Aplica fundo cinza claro apenas nas linhas PARES da tabela (2ª e 4ª linha).
+   even = par em inglês.
+   tr:nth-child(even) → seleciona as linhas pares
+   td → aplica o estilo nas células dessas linhas */
+tr:nth-child(even) td {
+    background-color: #e6e6e6;
+}

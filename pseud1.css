@@ -1,29 +1,38 @@
+/* Remove os marcadores (bolinhas) da lista
+   e o espaçamento interno padrão do navegador */
 menu ul {
     list-style: none;
     padding: 0;
 }
 
+/* Adiciona um pequeno espaço entre cada item da lista */
 menu li {
     margin: 5px 0;
 }
 
+/* Remove o sublinhado padrão dos links
+   e define o tamanho da fonte */
 menu a {
     text-decoration: none;
     font-size: 0.95rem;
 }
 
+/* Cor do link que ainda NÃO foi visitado */
 menu a:link {
     color: darkgreen;
 }
 
+/* Cor do link que o usuário JÁ visitou */
 menu a:visited {
     color: brown;
 }
 
+/* Cor de fundo quando o mouse passa por cima do link */
 menu a:hover {
     background-color: yellow;
 }
 
+/* Cor do link no momento em que o usuário está clicando nele */
 menu a:active {
     color: red;
 }
