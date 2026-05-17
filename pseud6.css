@@ -1,0 +1,17 @@
+#ex6 ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+#ex6 li {
+    margin: 4px 0;
+    font-weight: bold;
+}
+
+#ex6 h3::before {
+    content: "👉 ";
+}
+
+#ex6 li::before {
+    content: "🟢 ";
+}

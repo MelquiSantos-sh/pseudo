@@ -1,12 +1,29 @@
-a:link{
-    color: #ff0000;
+menu ul {
+    list-style: none;
+    padding: 0;
 }
-a:visited{
+
+menu li {
+    margin: 5px 0;
+}
+
+menu a {
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+menu a:link {
+    color: darkgreen;
+}
+
+menu a:visited {
     color: brown;
 }
-a:hover{
-    color: yellow;
+
+menu a:hover {
+    background-color: yellow;
 }
-a:active{
-    color: darkgreen;
+
+menu a:active {
+    color: red;
 }
