@@ -1,16 +1,24 @@
-#ex5 ul {
-      list-style: none;
-      padding: 0;
-    }
- 
-    #ex5 li {
-      margin: 4px 0;
-      font-family: monospace;
-    }
- 
-    #ex5 li::before {
-      content: "✔";
-      color: green;
-      margin-right: 6px;
-    }
- 
+/* Remove os marcadores padrão da lista (bolinhas)
+   e o espaçamento interno do navegador,
+   dentro do elemento com id="caixa" */
+#caixa ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0;       /* Remove o recuo padrão da lista */
+}
+
+/* Estilo aplicado em cada item da lista dentro de #caixa */
+#caixa li {
+    margin: 4px 0;        /* Espaço de 4px acima e abaixo de cada item */
+    font-family: monospace; /* Fonte estilo máquina de escrever
+                               (todas as letras com a mesma largura) */
+}
+
+/* Adiciona um ícone ✔ ANTES de cada item da lista
+   usando o pseudo-elemento ::before.
+   Nenhuma alteração é necessária no HTML,
+   o ícone é inserido automaticamente pelo CSS */
+#caixa li::before {
+    content: "✔";    /* Define o ícone que será inserido antes de cada item */
+    color: green;    /* Cor do ícone em verde */
+    margin-right: 6px; /* Espaço de 6px entre o ícone e o texto do item */
+}

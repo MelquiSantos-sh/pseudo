@@ -1,17 +1,33 @@
-#ex4 p {
+/* Estilo aplicado em todos os parágrafos dentro do elemento com id="caixa" */
+#caixa p {
     border: 1px solid #ccc;
+    /* Borda cinza clara ao redor de cada parágrafo */
     padding: 10px;
+    /* Espaço interno de 10px entre o texto e a borda */
     margin-bottom: 10px;
+    /* Espaço de 10px abaixo de cada parágrafo */
     font-family: monospace;
+    /* Fonte estilo máquina de escrever (todas as letras com a mesma largura) */
     font-size: 0.85rem;
+    /* Tamanho da fonte um pouco menor que o padrão */
     line-height: 1.6;
+    /* Espaçamento entre as linhas do texto */
     text-align: justify;
+    /* Alinha o texto nas duas margens (esquerda e direita) */
 }
 
-#ex4 p:first-child::first-line {
+/* Aplica fundo AMARELO apenas na primeira linha
+   do PRIMEIRO parágrafo dentro de #caixa.
+   :first-child  → seleciona o primeiro parágrafo
+   ::first-line  → seleciona apenas a primeira linha desse parágrafo */
+#caixa p:first-child::first-line {
     background-color: yellow;
 }
 
-#ex4 p:not(:first-child)::first-line {
+/* Aplica fundo SALMON (laranja salmão) apenas na primeira linha
+   de TODOS OS OUTROS parágrafos (que não sejam o primeiro).
+   :not(:first-child) → seleciona todos exceto o primeiro parágrafo
+   ::first-line       → seleciona apenas a primeira linha desses parágrafos */
+#caixa p:not(:first-child)::first-line {
     background-color: salmon;
 }

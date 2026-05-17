@@ -1,17 +1,27 @@
-#ex6 ul {
-    list-style: none;
-    padding-left: 20px;
+/* Remove os marcadores padrão da lista (bolinhas)
+   e adiciona um recuo de 20px na esquerda para alinhar os itens,
+   dentro do elemento com id="caixa" */
+#caixa ul {
+    list-style: none;   /* Remove as bolinhas da lista */
+    padding-left: 20px; /* Recuo de 20px na esquerda para organizar os itens */
 }
 
-#ex6 li {
-    margin: 4px 0;
-    font-weight: bold;
+/* Estilo aplicado em cada item da lista dentro de #caixa */
+#caixa li {
+    margin: 4px 0;     /* Espaço de 4px acima e abaixo de cada item */
+    font-weight: bold; /* Deixa o texto de cada item em negrito */
 }
 
-#ex6 h3::before {
-    content: "👉 ";
+/* Adiciona o ícone 👉 ANTES de cada título h3 dentro de #caixa.
+   O ícone é inserido automaticamente pelo CSS,
+   sem precisar alterar o HTML */
+#caixa h3::before {
+    content: "👉 "; /* Ícone de mão apontando que aparece antes do título */
 }
 
-#ex6 li::before {
-    content: "🟢 ";
+/* Adiciona o ícone 🟢 ANTES de cada item da lista dentro de #caixa.
+   O ícone é inserido automaticamente pelo CSS,
+   sem precisar alterar o HTML */
+#caixa li::before {
+    content: "🟢 "; /* Ícone de círculo verde que aparece antes de cada item */
 }
